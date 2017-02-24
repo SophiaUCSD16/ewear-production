@@ -7,6 +7,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
  <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700" rel="stylesheet">
+ <!--
  <script>
  var indexI = 0;
  var indexJ = 0;
@@ -27,6 +28,7 @@
   y.setAttribute( "src", pants[indexJ] );
  }
  </script>
+-->
 </head>
 
 <body ng-controller="MainCtrl">
@@ -67,9 +69,9 @@
       <img src="/images/Pants.png" class="Outfit" id="Pants" >
     </div>
     <div class="Choice">
-        <button class="btn" onclick = "clickShirt()">Shirt</button>
-        <a href="#" class="btn" >Like</a>
-        <button class="btn" onclick = "clickPants()">Pants</button>
+      <button class="btn" id="shirt" >Shirt</button>
+      <a href="#" class="btn" >Like</a>
+      <button class="btn" id="pants" >Pants</button>
     </div>
   </div>
   

@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 	$('.Choice button').click(clickShirt);
 	$('.Choice button').click(clickPants);
-	
+
 })
 
 /*
@@ -17,6 +17,11 @@ $(document).ready(function() {
  function initializePage() {
  	console.log("dashBoardFunc is connected");
  }
+
+/*
+// put in the button part of shirt and pant in handlebar 
+onclick = "clickShirt()"
+onclick = "clickPants()"
 
 // Call this function when shirt button get clicked 
 function clickShirt(e) {
@@ -39,10 +44,25 @@ function clickPants(e) {
 	// Switch to the new outfit 
 	$.get("/outfit", switchPants);
 }
+*/
+
+/* When the button get clicked */
+// Call this function when shirt button get clicked 
+function clickShirt(e) {
+	console.log("the shirt button is clicked");
+	$.get("/outfit", switchShirt);
+}
+
+// Call this fucntion when pants button get clicked 
+function clickPants(e) {
+	console.log("the pant button is clicked");
+	$.get("/outfit", switchPants);
+}
 
 /* The switch function for shirt to replace by a new shirt */
-function switchShirt(result){
+function switchShirt(result) {
 	// Display the fetched result to help debugging 
+	console.log("switchShirt get clicked");
 	console.log(result);
 	var shirt = '<div>' + '<img src =" ' + result['imageURL'] + ' “ class="Outfit" id="Shirt" >' + '</div>';
 	// Replace the original image by the new image from json 
@@ -50,8 +70,9 @@ function switchShirt(result){
 }
 
 /* The switch function for pant to replace by a new pant */
-function switchPants(result){
+function switchPants(result) {
 	// Display the fetched result to help  debugging 
+	console.log("switchPants get clicked");
 	console.log(result);
 	var pants = '<div>' + '<img src =" ' + result['imageURL'] + ' “ class="Outfit" id="Pants" >' + '</div>';
 	// Replace the original image by the new image from json 

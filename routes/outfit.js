@@ -12,6 +12,8 @@ exports.outfitInfo = function(req, res) {
 	} else {
 		outfitID = parseInt(outfitID);
 	}
+	outfitID = outfitID % 7;
+	outfit = defaultData[outfitID-1];
 
 	// When closet is not empty, grab information from the closet 
 	if (closetData !== null) {
@@ -23,7 +25,7 @@ exports.outfitInfo = function(req, res) {
 		outfit = defaultData[outfitID-1];
 	}
 
-	/* Get the outfit from json file */
+	// Get the outfit from json file 
 	res.json(outfit);
 	
 }
