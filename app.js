@@ -13,7 +13,7 @@ var landing = require('./routes/landing');
 var login = require('./routes/login');
 var dashboard = require('./routes/dashboard');
 var like = require('./routes/like');
-//var closet = require('./routes/closet');
+var closet = require('./routes/closet');
 var upload = require('./routes/upload');
 var outfit = require('./routes/outfit');
 
@@ -48,7 +48,7 @@ app.get('/', landing.view);
 app.get('/login', login.view);
 app.get('/dashboard', dashboard.view);
 app.get('/like', like.view);
-//app.get('/closet', closet.view);
+app.get('/closet', closet.view);
 app.get('/upload', upload.view);
 app.get('/outfit', outfit.outfitInfo);
 
