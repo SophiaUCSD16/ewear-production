@@ -1,4 +1,5 @@
 var closetdata = require('../closetdata.json');
+<<<<<<< HEAD
 var clothes;
 var fs = require('fs');
 
@@ -6,11 +7,24 @@ exports.view = function(req, res){
   res.render('closet', closetdata);
 };
 
+=======
+
+
+exports.view = function(req, res){
+
+	res.render('closet', closetdata);
+  	
+};
+
+
+/*
+>>>>>>> 9174d181312edba2b1ad2d0110341a2079eb73c1
 const Vision = require('@google-cloud/vision');
 const projectId='ewear-159500';
 const visionClient = Vision({
 	projectId: projectId
 });
+<<<<<<< HEAD
 
 for( var i in closetdata ){
 	clothes = closetdata[i];
@@ -24,6 +38,18 @@ for each (clothes in closetdata){
 	console.log(fileName);
 
 	
+=======
+<<<<<<< HEAD
+
+=======
+/*
+>>>>>>> parent of 79218ed... fix the problem with javascript linkage
+for each(clothes in closetdata){ 
+	clothes.fileName = closetdata["imageURL"];
+	console.log(fileName);
+
+	/*
+>>>>>>> 9174d181312edba2b1ad2d0110341a2079eb73c1
 	visionClient.detectLabels(fileName)
 	.then((results) => {
 
@@ -40,6 +66,10 @@ for each (clothes in closetdata){
     //})
 
 	})
+<<<<<<< HEAD
 }
+=======
+});
+>>>>>>> 9174d181312edba2b1ad2d0110341a2079eb73c1
 */
 
