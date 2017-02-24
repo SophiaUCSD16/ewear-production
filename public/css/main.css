@@ -41,7 +41,7 @@ li {
 }
 
 .Choice{
-  float:left;
+  float:center;
   height: auto;
   width:100%;
 }
@@ -59,7 +59,7 @@ li {
   font-family: 'Amatic SC', cursive;
   padding: 5%;
   position: center;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 html {
