@@ -1,11 +1,5 @@
 var closetdata = require('../closetdata.json');
-<<<<<<< HEAD
 
-//var fs = require('fs')
-=======
-var clothes;
-var fs = require('fs')
->>>>>>> parent of 79218ed... fix the problem with javascript linkage
 
 exports.view = function(req, res){
 
