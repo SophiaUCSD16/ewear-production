@@ -1,39 +1,109 @@
 {
 	"closetdata": [
 		{
-			"imageURL" : "/images/shirt1.png",
+			"imageURL" : "/images/Clothes/shirt1.png",
 		 	"label" : [ "clothing", "sleeve", "dress shirt", "blouse", "shirt" ],
 		  	"color" : ["blue", "pink"]
 		},
 		{
-			"imageURL" : "/images/shirt2.png",
+			"imageURL" : "/images/Clothes/shirt2.png",
 		 	"label" : ["denim", "clothing", "trousers", "pocket","jacket"],
 		  	"color" : ["blue", "pink"]
 		},
 		{
-			"imageURL" : "/images/shirt3.png",
+			"imageURL" : "/images/Clothes/shirt3.png",
 		  	"label" : ["clothing", "white", "active", "trousers", "pocket","shirt"],
 		  	"color" : ["white"]
 		},
 		{
-			"imageURL" : "/images/shirt4.png",
+			"imageURL" : "/images/Clothes/shirt4.png",
 		  	"label" : ["clothing", "sleeve", "pattern", "plaid", "dress shirt","sweater"],
 		  	"color" : ["black", "grey"]
 		},
 		{
-			"imageURL" : "/images/pant1.png",
+			"imageURL" : "/images/Clothes/shirt5.png",
+		 	"label" : [ "clothing", "sleeve", "dress shirt", "blouse", "shirt" ],
+		  	"color" : ["blue", "pink"]
+		},
+		{
+			"imageURL" : "/images/Clothes/shirt6.png",
+		 	"label" : ["denim", "clothing", "trousers", "pocket","sweater"],
+		  	"color" : ["blue", "pink"]
+		},
+		{
+			"imageURL" : "/images/Clothes/shirt7.png",
+		  	"label" : ["clothing", "white", "active", "trousers", "pocket","sweater"],
+		  	"color" : ["white"]
+		},
+		{
+			"imageURL" : "/images/Clothes/shirt8.png",
+		  	"label" : ["clothing", "sleeve", "pattern", "plaid", "dress shirt","sweater"],
+		  	"color" : ["black", "grey"]
+		},
+		{
+			"imageURL" : "/images/Clothes/shirt9.png",
+		 	"label" : [ "clothing", "sleeve", "dress shirt", "blouse", "sweater"],
+		  	"color" : ["blue", "pink"]
+		},
+		{
+			"imageURL" : "/images/Clothes/shirt10.png",
+		 	"label" : ["denim", "clothing", "trousers", "pocket","sweater"],
+		  	"color" : ["blue", "pink"]
+		},
+		{
+			"imageURL" : "/images/Clothes/shirt11.png",
+		  	"label" : ["clothing", "white", "active", "trousers", "pocket","sweater"],
+		  	"color" : ["white"]
+		},
+		{
+			"imageURL" : "/images/Clothes/shirt12.png",
+		  	"label" : ["clothing", "sleeve", "pattern", "plaid", "dress shirt","sweater"],
+		  	"color" : ["black", "grey"]
+		},
+		{
+			"imageURL" : "/images/Clothes/pant1.png",
 		  	"label" : ["jeans", "abdomen"],
 		  	"color" : ["blue"]
 		},
 		{
-			"imageURL" : "/images/pant2.png",
+			"imageURL" : "/images/Clothes/pant2.png",
 		  	"label" : ["dress", "design", "outerwear"],
 		  	"color" : ["black"]
 		},
 		{
-			"imageURL" : "/images/pant3.png",
+			"imageURL" : "/images/Clothes/pant3.png",
 		  	"label" : ["pattern", "blouse", "pant"],
 		  	"color" : ["white"]
+		},
+		{
+			"imageURL" : "/images/Clothes/pant4.png",
+		  	"label" : ["jeans", "abdomen","pant"],
+		  	"color" : ["blue"]
+		},
+		{
+			"imageURL" : "/images/Clothes/pant5.png",
+		  	"label" : ["dress", "design", "outerwear","pant"],
+		  	"color" : ["black"]
+		},
+		{
+			"imageURL" : "/images/Clothes/pant6.png",
+		  	"label" : ["jeans", "abdomen","pant"],
+		  	"color" : ["blue"]
+		},
+		{
+			"imageURL" : "/images/Clothes/pant7.png",
+		  	"label" : ["dress", "design", "outerwear","pant"],
+		  	"color" : ["black"]
+		},
+		{
+			"imageURL" : "/images/Clothes/pant8.png",
+		  	"label" : ["jeans", "abdomen","pant"],
+		  	"color" : ["blue"]
+		},
+		{
+			"imageURL" : "/images/Clothes/pant9.png",
+		  	"label" : ["dress", "design", "outerwear","pant"],
+		  	"color" : ["black"]
 		}
 	]
 }
