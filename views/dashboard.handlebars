@@ -13,14 +13,14 @@
 
 
 <!--Yahoo weather api-->
-<script>
+<!--<script>
   var callbackFunction = function(data) {
     var wind = data.query.results;
     console.log(wind);
   };
 </script>
 
-<script src="https://query.yahoo.com/v1/public/yql?q=select wind from weather.forecast where woeid in (select woeid from geo.places(1) where text='chicago, il')&format=json&callback=callbackFunction"></script>
+<script src="https://query.yahoo.com/v1/public/yql?q=select wind from weather.forecast where woeid in (select woeid from geo.places(1) where text='chicago, il')&format=json&callback=callbackFunction"></script>-->
 <!-- Google Analytics Content Experiment code -->
 <script>function utmx_section(){}function utmx(){}(function(){var
 k='141191229-0',d=document,l=d.location,c=d.cookie;
@@ -106,8 +106,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
     <script src="/js/dashBoardFunc.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-      {{> yahoo}}
-  <script src="/js/yahoo.js"></script>
 </body>
 
 </html>
