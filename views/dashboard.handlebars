@@ -48,19 +48,8 @@
     <img src="/images/weather/Cloudy.png" style="width: 70%; height:auto">
   </div>
 
-  <div class="Outfits">
-    {{#if showAlternate}}
-      <div class="shritImg">
-        <img src="/images/TShirt.png" class="Outfit" id="ShirtImgDisplay" >
-      </div>
-      <div class="pantsImg"> 
-        <img src="/images/Pants.png" class="Outfit" id="PantsImgDisplay" >
-      </div>
-      <div class="Choice">
-        <button class="btn" id="shirt" onclick = "clickShirt()">Shirt</button>
-        <button class="btn" id="pants" onclick = "clickPants()">Pants</button>
-      </div>
-    {{else}}
+  {{#if showAlternate}}
+    <div class="Outfits">
       <div class="shritImg">
         <img src="/images/TShirt.png" class="Outfit" id="ShirtImgDisplay" onclick = "clickShirt()">
       </div>
@@ -68,15 +57,28 @@
         <img src="/images/Pants.png" class="Outfit" id="PantsImgDisplay" onclick = "clickPants()">
       </div>
       <div class="Choice">
-        <button class="btn" id="shirt" onclick = "clickShirt()">Shirt</button>
-        <button class="btn" id="pants" onclick = "clickPants()">Pants</button>
+        <button class="btn" id="shirt" onclick = "clickShirt()">TOPS</button>
+        <button class="btn" id="pants" onclick = "clickPants()">BOTTOMS</button>
       </div>
-    {{/if}}
-  </div>
+    </div>
+  {{else}}
+    <div class="Outfits">
+      <div class="shritImg">
+        <img src="/images/TShirt.png" class="Outfit" id="ShirtImgDisplay" >
+      </div>
+      <div class="pantsImg"> 
+        <img src="/images/Pants.png" class="Outfit" id="PantsImgDisplay" >
+      </div>
+      <div class="Choice">
+        <button class="btn" id="shirt" onclick = "clickShirt()">SHIRTS</button>
+        <button class="btn" id="pants" onclick = "clickPants()">PANTS</button>
+      </div>
+    </div>
+  {{/if}}
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="js/dashBoardFunc.js"></script>
+    <script src="/js/dashBoardFunc.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>

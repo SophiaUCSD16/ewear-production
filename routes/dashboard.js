@@ -6,21 +6,19 @@ var closetData = require('../closetdata.json');
 var defaultData = require('../default.json');
 
 exports.view = function(req, res){
-	console.log(closetData);
-	console.log(defaultData);
 	// Add the flag for Alternative 
 	closetData["showAlternate"] = false;
-	console.log("showAlternate is false");
+	console.log(closetData);
+	console.log(defaultData);	
 	// display the dash board 
-	res.render('dashboard');
+	res.render('dashboard', closetData);
 };
 
 exports.viewAlternate = function(req, res){
-	onsole.log(closetData);
-	console.log(defaultData);
 	// Add the flag for Alternative 
 	closetData["showAlternate"] = true;
-	console.log("showAlternate is false");
+	console.log(closetData);
+	console.log(defaultData);
      // diaplay the dash board 
-     res.render('dashboard'); 
+     res.render('dashboard', closetData); 
 };
