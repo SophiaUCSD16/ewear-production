@@ -8,6 +8,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
  <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700" rel="stylesheet">
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 </head>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -20,9 +21,8 @@
 
 </script>
 <body ng-controller="MainCtrl">
-
-<body>
-	<nav class="navbar navbar-default navbar-fixed-top">
+ <div>
+	<nav class="navbar navbar-default navbar-fixed-top" style="position: absolute;">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-SignUp" aria-expanded="false">
@@ -42,6 +42,7 @@
 			    </div>
 		</div>
 	</nav>
+  </div>
 
 <!-- The main texts and the button goes here -->
   <div id="cover">
@@ -76,8 +77,8 @@
     </div>
   {{/if}}
 
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery.js"></script>-->
+    <!--<script src="/js/bootstrap.min.js"></script>-->
     <script src="/js/dashBoardFunc.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
