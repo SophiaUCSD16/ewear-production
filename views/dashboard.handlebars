@@ -8,7 +8,19 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
  <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700" rel="stylesheet">
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 </head>
+
+
+<!--Yahoo weather api-->
+<!--<script>
+  var callbackFunction = function(data) {
+    var wind = data.query.results;
+    console.log(wind);
+  };
+</script>
+
+<script src="https://query.yahoo.com/v1/public/yql?q=select wind from weather.forecast where woeid in (select woeid from geo.places(1) where text='chicago, il')&format=json&callback=callbackFunction"></script>-->
 <!-- Google Analytics Content Experiment code -->
 <script>function utmx_section(){}function utmx(){}(function(){var
 k='141191229-0',d=document,l=d.location,c=d.cookie;
@@ -33,9 +45,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 </script>
 <body ng-controller="MainCtrl">
-
-<body>
-	<nav class="navbar navbar-default navbar-fixed-top">
+ <div>
+	<nav class="navbar navbar-default navbar-fixed-top" style="position: absolute;">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-SignUp" aria-expanded="false">
@@ -55,6 +66,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			    </div>
 		</div>
 	</nav>
+  </div>
 
 <!-- The main texts and the button goes here -->
   <div id="cover">
@@ -64,7 +76,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
   {{#if showAlternate}}
     <div class="Outfits">
       <div class="shritImg">
-        <img src="/images/TShirt.png" class="Outfit" id="ShirtImgDisplay" onclick = "clickShirt()">
+        <img src="/images/Sweater.png" class="Outfit" id="ShirtImgDisplay" onclick = "clickShirt()">
       </div>
       <div class="pantsImg"> 
         <img src="/images/Pants.png" class="Outfit" id="PantsImgDisplay" onclick = "clickPants()">
@@ -77,7 +89,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
   {{else}}
     <div class="Outfits">
       <div class="shritImg">
-        <img src="/images/TShirt.png" class="Outfit" id="ShirtImgDisplay" >
+        <img src="/images/Sweater.png" class="Outfit" id="ShirtImgDisplay" >
       </div>
       <div class="pantsImg"> 
         <img src="/images/Pants.png" class="Outfit" id="PantsImgDisplay" >
@@ -89,8 +101,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
     </div>
   {{/if}}
 
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery.js"></script>-->
+    <!--<script src="/js/bootstrap.min.js"></script>-->
     <script src="/js/dashBoardFunc.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

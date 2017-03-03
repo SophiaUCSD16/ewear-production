@@ -38,7 +38,8 @@
 
 
 <!-- The clothes contatiner -->
-	<h1 id="omg">Tops</h1> 
+    <hr>
+	<h1 id="omg">All Clothes</h1> 
 	<div class="container">
 		<div class="row">
 			{{#each closetdata}}
@@ -53,7 +54,6 @@
 
 	</div>
 
-	<h1>Bottoms</h1> 
 
 
 <!-- The liked clothes contatiner -->
@@ -72,15 +72,12 @@
 	</div>
 
 <!--upload file-->
-<<form id="upload" role="form" method="get" action="/upload">
-	
+<!--<<form id="upload" role="form" method="get" action="/">-->
 	<p class="help-block">Choose a FILE to upload</p>
 	<input id="file" type="file">
   	<p class="help-block">Choose a FOLDER to upload</p>
     <input type="file" name="files[]" id="files" multiple="" directory="" webkitdirectory="" mozdirectory="">
-    <input id="folder" class="button" type="submit" value="/Upload" />
-    
-</form>
+<!--</form>-->
 
 
 
