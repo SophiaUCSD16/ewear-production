@@ -46,7 +46,10 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', landing.view);
 app.get('/login', login.view);
+// register the control (original) condiotion
 app.get('/dashboard', dashboard.view);
+// register the experimenetal condition 
+app.get('/Alternate',dashboard.viewAlternate);
 //app.get('/like', like.view);
 app.get('/closet', closet.view);
 app.get('/upload', upload.view);
