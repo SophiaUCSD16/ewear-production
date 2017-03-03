@@ -7,17 +7,17 @@
 		},
 		{
 			"imageURL" : "/images/shirt2.png",
-		 	"label" : ["denim", "clothing", "trousers", "pocket"],
+		 	"label" : ["denim", "clothing", "trousers", "pocket","jacket"],
 		  	"color" : ["blue", "pink"]
 		},
 		{
 			"imageURL" : "/images/shirt3.png",
-		  	"label" : ["clothing", "white", "active", "trousers", "pocket"],
+		  	"label" : ["clothing", "white", "active", "trousers", "pocket","shirt"],
 		  	"color" : ["white"]
 		},
 		{
 			"imageURL" : "/images/shirt4.png",
-		  	"label" : ["clothing", "sleeve", "pattern", "plaid", "dress shirt"],
+		  	"label" : ["clothing", "sleeve", "pattern", "plaid", "dress shirt","sweater"],
 		  	"color" : ["black", "grey"]
 		},
 		{
