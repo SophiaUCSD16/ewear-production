@@ -72,14 +72,42 @@ function initializePage() {
 	console.log("dashBoardFunc is connected");
 }
 
+// Calling the switch option for shirt from image directly 
+function ImgclickShirt(e) {
+	console.log("the shirtclick is triggered from image");
+	// the trigger for google analytics 
+	ga('create', 'UA-92899008-1', 'auto');
+	ga('send', 'pageview');
+	ga('send','event','image','click');
+	switchShirt();
+}
+
+// Calling the switch option for shirt from image directly 
+function ImgclickPants(e) {
+	console.log("the pantclick is triggered from image");
+	// the trigger for google analytics 
+	ga('create', 'UA-92899008-1', 'auto');
+	ga('send', 'pageview');
+	ga('send','event','image','click');
+	switchPants();
+}
+
 function clickShirt(e) {
 	console.log("the shirt button is clicked");
+	// the trigger for google analytics 
+	ga('create', 'UA-92899008-1', 'auto');
+	ga('send', 'pageview');
+	ga('send','event','button','click');
 	switchShirt();
 }
 
 // Call this fucntion when pants button get clicked 
 function clickPants(e) {
 	console.log("the pant button is clicked");
+	// the trigger for google analytics 
+	ga('create', 'UA-92899008-1', 'auto');
+	ga('send', 'pageview');
+	ga('send','event','button','click');
 	switchPants();
 }
 
