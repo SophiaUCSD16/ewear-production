@@ -94,24 +94,51 @@ function ImgclickPants(e) {
 	switchPants();
 }
 
-function clickShirt(e) {
+// Call this fucntion when shirts button get clicked from Alternative 
+function AclickShirt(e) {
 	console.log("the shirt button is clicked");
 	// the trigger for google analytics 
 	ga('create', 'UA-92899008-1', 'auto');
 	ga('send', 'pageview');
 	ga('send','event','button','click');
 	ga('send','event','switchAction','click');
+	ga('send','event','Alternative','click');
 	switchShirt();
 }
 
-// Call this fucntion when pants button get clicked 
-function clickPants(e) {
+// Call this fucntion when shirts button get clicked from the original 
+function OclickShirt(e) {
+	console.log("the shirt button is clicked");
+	// the trigger for google analytics 
+	ga('create', 'UA-92899008-1', 'auto');
+	ga('send', 'pageview');
+	ga('send','event','button','click');
+	ga('send','event','switchAction','click');
+	ga('send','event','original','click');
+	switchShirt();
+}
+
+// Call this fucntion when pants button get clicked from Alternative
+function AclickPants(e) {
 	console.log("the pant button is clicked");
 	// the trigger for google analytics 
 	ga('create', 'UA-92899008-1', 'auto');
 	ga('send', 'pageview');
 	ga('send','event','button','click');
 	ga('send','event','switchAction','click');
+	ga('send','event','Alternative','click');
+	switchPants();
+}
+
+// Call this fucntion when pants button get clicked from the original 
+function OclickPants(e) {
+	console.log("the pant button is clicked");
+	// the trigger for google analytics 
+	ga('create', 'UA-92899008-1', 'auto');
+	ga('send', 'pageview');
+	ga('send','event','button','click');
+	ga('send','event','switchAction','click');
+	ga('send','event','original','click');
 	switchPants();
 }
 
@@ -119,6 +146,9 @@ function clickPants(e) {
 function switchShirt() {
 	// Display the fetched result to help debugging 
 	console.log("switchShirt get clicked");
+	ga('create', 'UA-92899008-1', 'auto');
+	ga('send', 'pageview');
+	ga('send','event','shirt','click');
 	
 	var targetIndex = indexS % shirtDB.length;
 	indexS = (indexS + 1) % shirtDB.length;
@@ -131,6 +161,9 @@ function switchShirt() {
 function switchPants() {
 	// Display the fetched result to help  debugging 
 	console.log("switchPants get clicked");
+	ga('create', 'UA-92899008-1', 'auto');
+	ga('send', 'pageview');
+	ga('send','event','pants','click');
 	
 	var targetIndex = indexP % pantDB.length;
 	indexP = (indexP + 1) % pantDB.length;
