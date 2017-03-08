@@ -6,7 +6,7 @@ $(document).ready(function() {
 	initializePage();
 
 	// Display the image on closet page 
-	displayImg(closetdata);
+	//displayImg(closetdata);
 
 })
 

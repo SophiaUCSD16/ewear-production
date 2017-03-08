@@ -55,6 +55,10 @@ app.get('/closet', closet.view);
 app.get('/upload', upload.view);
 app.get('/outfit', outfit.outfitInfo);
 
+/*app.post('/closet', function(req,res){
+  res.send('You sent the name');
+});*/
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
