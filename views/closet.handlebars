@@ -12,6 +12,7 @@
  	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
  	<script>
+
  	var test = 0;
  	function del(){
  		localStorage.clear();
@@ -27,7 +28,9 @@
 
        }
    }
-
+$(".btn btn-success").mouseup(function(){
+    $(this).outline(none);
+})
         
 });
    function previewFile(){
@@ -168,7 +171,7 @@
 	<input type="file" onchange="previewFile()">
 	<p class="help-block">Delete uploaded photos</p>-->
 	
-    <input class="btn btn-success" type="file" value="upload" onchange="preview()"/>
+    <input class="btn btn-success" type="file" value="upload" onchange="previewFile()"/>
     <hr>
 	<button type="button" class="btn btn-danger" onclick="del()">Delete</button>
 	<hr>
