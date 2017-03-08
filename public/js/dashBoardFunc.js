@@ -79,6 +79,7 @@ function ImgclickShirt(e) {
 	ga('create', 'UA-92899008-1', 'auto');
 	ga('send', 'pageview');
 	ga('send','event','image','click');
+	ga('send','event','switchAction','click');
 	switchShirt();
 }
 
@@ -89,6 +90,7 @@ function ImgclickPants(e) {
 	ga('create', 'UA-92899008-1', 'auto');
 	ga('send', 'pageview');
 	ga('send','event','image','click');
+	ga('send','event','switchAction','click');
 	switchPants();
 }
 
@@ -98,6 +100,7 @@ function clickShirt(e) {
 	ga('create', 'UA-92899008-1', 'auto');
 	ga('send', 'pageview');
 	ga('send','event','button','click');
+	ga('send','event','switchAction','click');
 	switchShirt();
 }
 
@@ -108,6 +111,7 @@ function clickPants(e) {
 	ga('create', 'UA-92899008-1', 'auto');
 	ga('send', 'pageview');
 	ga('send','event','button','click');
+	ga('send','event','switchAction','click');
 	switchPants();
 }
 
