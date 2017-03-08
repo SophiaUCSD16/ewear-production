@@ -79,8 +79,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
         <img src="/images/Pants.png" class="Outfit" id="PantsImgDisplay" onclick = "ImgclickPants()">
       </div>
       <div class="Choice">
-        <button class="btn" id="shirt" onclick = "AclickShirt( )">TOPS</button>
-        <button class="btn" id="pants" onclick = "AclickPants( )">BOTTOMS</button>
+        <button class="btn btn-warning" id="shirt" onclick = "AclickShirt( )">TOPS</button>
+        <button class="btn btn-info" onclick = "AclickPants( )">BOTTOMS</button>
       </div>
     </div>
   {{else}}
@@ -92,8 +92,10 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
         <img src="/images/Pants.png" class="Outfit" id="PantsImgDisplay" >
       </div>
       <div class="Choice">
-        <button class="btn" id="shirt" onclick = "OclickShirt( )">SHIRTS</button>
-        <button class="btn" id="pants" onclick = "OclickPants( )">PANTS</button>
+        <button class="btn btn-warning" id="shirt" onclick = "OclickShirt( )">
+        <span class="glyphicons-t-shirt"></span>SHIRTS</button>
+        <button class="btn btn-info" id="pants" onclick = "OclickPants( )">
+        <span class="glyphicons-pants"></span>PANTS</button>
       </div>
     </div>
   {{/if}}

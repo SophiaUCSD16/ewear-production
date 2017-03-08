@@ -12,17 +12,40 @@
  	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
  	<script>
+ 	var test = 0;
+ 	function del(){
+ 		localStorage.clear();
+ 		window.location.reload();
+ 	}
+
+ 	$(document).ready(function() {
+ 		
+ 		if (test == 0) {
+ 		for (i=0;i<localStorage.length;i++){
+           var img = '<img src="'+ localStorage.getItem('imgURL'+i)+ '" class = "detailsImage"><hr>';
+           $("#more").append( img );
+
+       }
+   }
+
+        
+});
    function previewFile(){
        //var preview = document.querySelector('more'); //selects the query named img
-       
        var file    = document.querySelector('input[type=file]').files[0]; //sames as here
        var reader  = new FileReader();
 
        reader.onloadend = function () {
            //preview.src = reader.result;
+           localStorage.setItem('imgURL'+localStorage.length, reader.result);
            var img = '<img src="'+ reader.result+ '" class = "detailsImage"><hr>';
            $("#more").append( img );
+           var test =1;
+       
+
        }
+
+
        
 
        if (file) {
@@ -101,8 +124,9 @@
 
 <!-- The clothes contatiner -->
     <hr>
-	<h1 id="omg">All Clothes</h1> 
+	
 	<div class="container">
+	<h1 id="omg">All Clothes</h1> 
 		<div class="row">
 			{{#each closetdata}}
 			<div class="col-lg-4 col-md-6 col-sm-12">
@@ -136,16 +160,23 @@
 			</div>
 			{{/each}}
 		</div>
-	</div>
+	
 
 <!--upload file-->
 <!--<form id="upload" role="form" method="post" action="">-->
-	<p class="help-block">Choose a FILE to upload</p>
+	<!--<p class="help-block">Choose a FILE to upload</p>
 	<input type="file" onchange="previewFile()">
+	<p class="help-block">Delete uploaded photos</p>-->
+	
+    <input class="btn btn-success" type="file" value="upload" onchange="preview()"/>
+    <hr>
+	<button type="button" class="btn btn-danger" onclick="del()">Delete</button>
+	<hr>
+	
   	<!--<p class="help-block">Choose a FOLDER to upload</p>
     <input type="file" name="files[]" id="files" multiple="" directory="" webkitdirectory="" mozdirectory="" onchange="previewFile">-->
 <!--</form>-->
-
+</div>
 
 
 
