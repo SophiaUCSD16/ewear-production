@@ -22,3 +22,7 @@ hr {
 html {
 	height: 100%;
 }
+
+.navbar-brand {
+		font-family: 'Amiri', serif;
+}
