@@ -10,7 +10,6 @@
 body {
 	background-color: #FFF;
 	background-position: center;
-	font-family: 'Amiri', serif;
 	color: white;
 }
 
@@ -65,7 +64,6 @@ li {
 .btn {
   background-color: #14213D;
   color: #FFF;
-  font-family: 'Amatic SC', cursive;
   padding: 5%;
   position: center;
   margin-left: 10%;
@@ -84,5 +82,10 @@ hr {
 
 .arrows {
   color = blue;
+}
+
+
+.navbar-brand {
+    font-family: 'Amiri', serif;
 }
 
