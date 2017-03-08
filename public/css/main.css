@@ -1,3 +1,12 @@
+.carousel-control.left, .carousel-control.right {
+  background: none !important;
+  filter: progid: none !important;
+  filter:none !important;
+  background-image:none;
+  outline: 0;
+  opacity: 1;
+ }
+
 body {
 	background-color: #FFF;
 	background-position: center;
@@ -71,5 +80,9 @@ hr {
 	width: 400px;
 	border-top: 1px solid white;
 
+}
+
+.arrows {
+  color = blue;
 }
 
