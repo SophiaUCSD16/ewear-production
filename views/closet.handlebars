@@ -25,7 +25,7 @@
  		for (i=0;i<localStorage.length;i++){
            var img = '<img src="'+ localStorage.getItem('imgURL'+i)+ '" class = "detailsImage"><hr>';
            $("#more").append( img );
-
+           
        }
    }
 $(".btn btn-success").mouseup(function(){
@@ -130,6 +130,10 @@ $(".btn btn-success").mouseup(function(){
 	
 	<div class="container">
 	<h1 id="omg">All Clothes</h1> 
+	<input class="btn btn-success" type="file" value="upload" onchange="previewFile()"/>
+    <hr>
+	<button type="button" class="btn btn-danger" onclick="del()">Delete</button>
+	<hr>
 		<div class="row">
 			{{#each closetdata}}
 			<div class="col-lg-4 col-md-6 col-sm-12">
@@ -171,10 +175,7 @@ $(".btn btn-success").mouseup(function(){
 	<input type="file" onchange="previewFile()">
 	<p class="help-block">Delete uploaded photos</p>-->
 	
-    <input class="btn btn-success" type="file" value="upload" onchange="previewFile()"/>
-    <hr>
-	<button type="button" class="btn btn-danger" onclick="del()">Delete</button>
-	<hr>
+    
 	
   	<!--<p class="help-block">Choose a FOLDER to upload</p>
     <input type="file" name="files[]" id="files" multiple="" directory="" webkitdirectory="" mozdirectory="" onchange="previewFile">-->
