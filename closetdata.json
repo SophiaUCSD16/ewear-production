@@ -7,18 +7,28 @@
 		},
 		{
 			"imageURL" : "/images/Clothes/shirt2.png",
-		 	"label" : ["denim", "clothing", "trousers", "pocket","jacket"],
+		 	"label" : [ "clothing", "sleeve", "dress shirt", "blouse", "shirt" ],
 		  	"color" : ["blue", "pink"]
 		},
 		{
 			"imageURL" : "/images/Clothes/shirt3.png",
-		  	"label" : ["clothing", "white", "active", "trousers", "pocket","shirt"],
-		  	"color" : ["white"]
+		 	"label" : [ "clothing", "sleeve", "dress shirt", "blouse", "shirt" ],
+		  	"color" : ["blue", "pink"]
 		},
 		{
 			"imageURL" : "/images/Clothes/shirt4.png",
-		  	"label" : ["clothing", "sleeve", "pattern", "plaid", "dress shirt","sweater"],
-		  	"color" : ["black", "grey"]
+		 	"label" : [ "clothing", "sleeve", "dress shirt", "blouse", "shirt" ],
+		  	"color" : ["blue", "pink"]
+		},
+		{
+			"imageURL" : "/images/Clothes/shirt5.png",
+		 	"label" : [ "clothing", "sleeve", "dress shirt", "blouse", "shirt" ],
+		  	"color" : ["blue", "pink"]
+		},
+		{
+			"imageURL" : "/images/Clothes/shirt6.png",
+		 	"label" : [ "clothing", "sleeve", "dress shirt", "blouse", "shirt" ],
+		  	"color" : ["blue", "pink"]
 		},
 		{
 			"imageURL" : "/images/Clothes/shirt5.png",
@@ -97,13 +107,34 @@
 		},
 		{
 			"imageURL" : "/images/Clothes/pant8.png",
-		  	"label" : ["jeans", "abdomen","pant"],
+		  	"label" : ["skirt", "abdomen","pant"],
 		  	"color" : ["blue"]
 		},
 		{
 			"imageURL" : "/images/Clothes/pant9.png",
 		  	"label" : ["dress", "design", "outerwear","pant"],
 		  	"color" : ["black"]
+		},
+		{
+			"imageURL" : "/images/Clothes/pant10.png",
+		  	"label" : ["skirt", "design", "outerwear","pant"],
+		  	"color" : ["black"]
+		},
+		{
+			"imageURL" : "/images/Clothes/pant11.png",
+		  	"label" : ["skirt", "design", "outerwear","pant"],
+		  	"color" : ["black"]
+		},
+		{
+			"imageURL" : "/images/Clothes/pant12.png",
+		  	"label" : ["skirt", "design", "outerwear","pant"],
+		  	"color" : ["black"]
+		},
+		{
+			"imageURL" : "/images/Clothes/pant13.png",
+		  	"label" : ["skirt", "design", "outerwear","pant"],
+		  	"color" : ["black"]
 		}
+	
 	]
 }

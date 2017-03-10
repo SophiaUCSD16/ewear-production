@@ -26,13 +26,16 @@ hr {
 }
 
 img {
-	width: 100%;
-	height: 500px;
+	vertical-align:middle;
+	width: 180px;
+	height: 200px;
+	margin-left:20%;
 }
 
 
 .navbar-brand {
 		font-family: 'Amiri', serif;
+	
 }
 
 .inside {
@@ -42,6 +45,9 @@ img {
 .btn{
 	position: center;
 	font-family: serif;
+	margin-left:5%;
 
 }
+
+
 

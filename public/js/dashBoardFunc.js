@@ -6,7 +6,7 @@ var outfitDB;
 var shirtDB = [];
 var pantDB = [];
 
-var temperature = 70; 
+var temperature = 78; 
 
 // Call this function when page loads (the "ready" event)
 $(document).ready(function() {
@@ -18,8 +18,8 @@ $(document).ready(function() {
 		if ( temperature < 30 ) {
 			clothesClassifier( "jacket", "jeans", outfitDB );
 		}
-		else if ( temperature > 100 ) {
-			clothesClassifier( "shirt", "dress", outfitDB );
+		else if ( temperature > 75 ) {
+			clothesClassifier( "shirt", "skirt", outfitDB );
 		}
 		else {
 			clothesClassifier( "sweater", "pant", outfitDB );
