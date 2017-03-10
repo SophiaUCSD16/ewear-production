@@ -34,7 +34,7 @@ img {
 
 
 .navbar-brand {
-		font-family: 'Amiri', serif;
+    font-family: 'Amiri', serif;
 	
 }
 
@@ -47,6 +47,11 @@ img {
 	font-family: serif;
 
 }
+
+
+.black-background {background-color:lightgrey;}
+.white {color:#ffffff;}
+
 
 
 

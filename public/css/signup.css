@@ -26,3 +26,6 @@ html {
 .navbar-brand {
 		font-family: 'Amiri', serif;
 }
+
+.black-background {background-color:#000000;}
+.white {color:#ffffff;}
