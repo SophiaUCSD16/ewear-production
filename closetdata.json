@@ -31,16 +31,6 @@
 		  	"color" : ["blue", "pink"]
 		},
 		{
-			"imageURL" : "/images/Clothes/shirt5.png",
-		 	"label" : [ "clothing", "sleeve", "dress shirt", "blouse", "shirt" ],
-		  	"color" : ["blue", "pink"]
-		},
-		{
-			"imageURL" : "/images/Clothes/shirt6.png",
-		 	"label" : ["denim", "clothing", "trousers", "pocket","sweater"],
-		  	"color" : ["blue", "pink"]
-		},
-		{
 			"imageURL" : "/images/Clothes/shirt7.png",
 		  	"label" : ["clothing", "white", "active", "trousers", "pocket","sweater"],
 		  	"color" : ["white"]
