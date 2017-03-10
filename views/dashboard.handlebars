@@ -56,7 +56,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 	    </div>
       
 	      	<div class="collapse navbar-collapse" id="bs-SignUp">
-  		      <ul class="nav navbar-nav navbar-right">
+  		      <ul id="navWord" class="nav navbar-nav navbar-right">
   		      	<li><a href="/closet" >Closet</a></li>
               <li><a href="/">Log Out</a></li>
   		      </ul>	
@@ -79,8 +79,15 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
         <img src="/images/Pants.png" class="Outfit" id="PantsImgDisplay" onclick = "ImgclickPants()">
       </div>
       <div class="Choice">
-        <button class="btn btn-warning" id="shirt" onclick = "AclickShirt( )">TOPS</button>
-        <button class="btn btn-info" onclick = "AclickPants( )">BOTTOMS</button>
+        <button type="button" onclick = "AclickShirt( )">
+        <img class="icon" src="/images/shirt.png"/>
+         <span class="glyphicons glyphicons-289-scissors" aria-hidden="true"></span>
+        </button>
+        <button type="button"  onclick = "AclickPants( )">
+        <img class="iconn" src="/images/pant.png"/>
+        <span class="glyphicons-289-scissors" aria-hidden="true"></span>
+       
+        </button>
       </div>
     </div>
   {{else}}
@@ -92,10 +99,12 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
         <img src="/images/Pants.png" class="Outfit" id="PantsImgDisplay" >
       </div>
       <div class="Choice">
-        <button class="btn btn-warning" id="shirt" onclick = "OclickShirt( )">
-        <span class="glyphicons-t-shirt"></span>SHIRTS</button>
-        <button class="btn btn-info" id="pants" onclick = "OclickPants( )">
-        <span class="glyphicons-pants"></span>PANTS</button>
+        <button type="button"  onclick = "OclickShirt( )">
+        <img class="icon" src="/images/shirt.png"/>
+        <span class="glyphicons glyphicons-289-scissors" aria-hidden="true"></span></button>
+        <button type="button" onclick = "OclickPants( )">
+        <img class="iconn" src="/images/pant.png"/>
+        <span class="glyphicons-289-scissors" aria-hidden="true"></span></button>
       </div>
     </div>
   {{/if}}

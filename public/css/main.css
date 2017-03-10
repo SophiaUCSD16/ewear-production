@@ -13,40 +13,26 @@ body {
 	color: white;
 }
 
-ul {
-  margin: 30px auto;
-  text-align: center;
-}
 
-li {
-  color: #000;
-  display: inline-block;
-  font-family: 'Oswald', sans-serif;
-  font-size: 16px;
-  text-align: left;
-  font-weight: 300;
-  padding: 0 40px;
-}
+
+
 
 .Outfits {
   box-sizing: border-box;
   width: 65%;
-  margin: 5px auto;
-  padding: 5px 0px;
+  margin: 0px auto;
+  padding: 0px 0px;
   text-align: center;
 }
 
 .Outfit {
   display: inline-block;
-  margin: 0px 2% 10px 2%;
   text-align: center;
-  width: 150px;
-  height: 220px;
+  width: 140px;
+  height: 180px;
+  margin-top: 0px;
 }
 
-.Outfit img{
-  width: 300px;
-}
 
 .Choice{
   float:center;
@@ -62,11 +48,13 @@ li {
 }
 
 .btn {
-  background-color: #14213D;
+  
   color: #FFF;
   padding: 5%;
   position: center;
   margin-left: 10%;
+  width:5%;
+  height:5%;
 }
 
 html {
@@ -75,8 +63,8 @@ html {
 
 
 hr {
-	width: 400px;
-	border-top: 1px solid white;
+	width: 90%;
+	border-top: 1px solid lightgrey;
 
 }
 
@@ -87,5 +75,21 @@ hr {
 
 .navbar-brand {
     font-family: 'Amiri', serif;
+}
+
+.icon {
+  width: 60px;
+  height:60px;
+  border-color: black;
+}
+
+.iconn {
+  width: 55px;
+  height: 55px;
+
+}
+
+#navWord {
+  font-family: serif;
 }
 
