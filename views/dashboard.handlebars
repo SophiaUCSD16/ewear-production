@@ -70,44 +70,20 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
     <img src="/images/weather/Cloudy.png" style="width: 70%; height:auto">
   </div>
 
-  {{#if showAlternate}}
-    <div class="Outfits">
-      <div class="shritImg">
-        <img src="/images/Sweater.png" class="Outfit" id="ShirtImgDisplay" onclick = "ImgclickShirt()">
-      </div>
-      <div class="pantsImg"> 
-        <img src="/images/Pants.png" class="Outfit" id="PantsImgDisplay" onclick = "ImgclickPants()">
-      </div>
-      <div class="Choice">
-        <button type="button" class="btn btn-default" onclick = "AclickShirt( )">
-        <!--<img class="icon" src="/images/shirt.png"/>-->
-        Shirts
-        </button>
-        <button type="button"  class="btn btn-default" onclick = "AclickPants( )">
-        <!--<img class="iconn" src="/images/pant.png"/>-->
-       Pants
-       
-        </button>
-      </div>
-    </div>
-  {{else}}
-    <div class="Outfits">
-      <div class="shritImg">
-        <img src="/images/Sweater.png" class="Outfit" id="ShirtImgDisplay" >
-      </div>
-      <div class="pantsImg"> 
-        <img src="/images/Pants.png" class="Outfit" id="PantsImgDisplay" >
-      </div>
-      <div class="Choice">
-        <button type="button" class="btn btn-default black-background white btn-lg" onclick = "OclickShirt( )">
-        <!--<img class="icon" src="/images/shirt.png"/>-->
-        Shirts</button>
-        <button type="button" class="btn btn-default black-background white btn-lg" onclick = "OclickPants( )">
-        <!--<img class="iconn" src="/images/pant.png"/>-->
-        Pants</button>
-      </div>
-    </div>
-  {{/if}}
+<div class="Outfits">
+  <div class="shritImg">
+    <img src="/images/Sweater.png" class="Outfit" id="ShirtImgDisplay" >
+  </div>
+  <div class="pantsImg"> 
+    <img src="/images/Pants.png" class="Outfit" id="PantsImgDisplay" >
+  </div>
+  <div class="Choice">
+    <button type="button" class="btn btn-default black-background white btn-lg" onclick = "clickShirt( )">
+    <!--<img class="icon" src="/images/shirt.png"/>-->Shirts</button>
+    <button type="button" class="btn btn-default black-background white btn-lg" onclick = "clickPants( )">
+    <!--<img class="iconn" src="/images/pant.png"/>-->Pants</button>
+  </div>
+</div>
 
    <!-- arrows Controls -->
    <!--

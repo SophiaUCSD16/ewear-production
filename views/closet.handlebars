@@ -43,17 +43,10 @@ $(".btn btn-success").mouseup(function(){
            localStorage.setItem('imgURL'+localStorage.length, reader.result);
            var img = '<img src="'+ reader.result+ '" class = "detailsImage"><hr>';
            $("#more").append( img );
-           var test =1;
-       
-
+           var test =1;    
        }
-
-
-       
-
        if (file) {
            reader.readAsDataURL(file); //reads the data as a URL
-    
        } else {
            preview.src = "";
        }
@@ -103,12 +96,11 @@ $(".btn btn-success").mouseup(function(){
 				<hr>
 			</div>
 			{{/each}}
-
+				
 				<div class="col-lg-4 col-md-6 col-sm-12">
 				<div id="more" class="thumbnails">
 				</div>
 				
-			
 			</div>
 		</div>
 	</div>

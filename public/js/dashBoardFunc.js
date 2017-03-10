@@ -94,20 +94,8 @@ function ImgclickPants(e) {
 	switchPants();
 }
 
-// Call this fucntion when shirts button get clicked from Alternative 
-function AclickShirt(e) {
-	console.log("the shirt button is clicked");
-	// the trigger for google analytics 
-	ga('create', 'UA-92899008-1', 'auto');
-	ga('send', 'pageview');
-	ga('send','event','button','click');
-	ga('send','event','switchAction','click');
-	ga('send','event','Alternative','click');
-	switchShirt();
-}
-
 // Call this fucntion when shirts button get clicked from the original 
-function OclickShirt(e) {
+function clickShirt(e) {
 	console.log("the shirt button is clicked");
 	// the trigger for google analytics 
 	ga('create', 'UA-92899008-1', 'auto');
@@ -118,20 +106,8 @@ function OclickShirt(e) {
 	switchShirt();
 }
 
-// Call this fucntion when pants button get clicked from Alternative
-function AclickPants(e) {
-	console.log("the pant button is clicked");
-	// the trigger for google analytics 
-	ga('create', 'UA-92899008-1', 'auto');
-	ga('send', 'pageview');
-	ga('send','event','button','click');
-	ga('send','event','switchAction','click');
-	ga('send','event','Alternative','click');
-	switchPants();
-}
-
 // Call this fucntion when pants button get clicked from the original 
-function OclickPants(e) {
+function clickPants(e) {
 	console.log("the pant button is clicked");
 	// the trigger for google analytics 
 	ga('create', 'UA-92899008-1', 'auto');
