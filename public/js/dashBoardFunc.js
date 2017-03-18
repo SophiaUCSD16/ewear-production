@@ -76,7 +76,7 @@ function initializePage() {
 function ImgclickShirt(e) {
 	console.log("the shirtclick is triggered from image");
 	// the trigger for google analytics 
-	ga('create', 'UA-92899008-1', 'auto');
+	ga('create', 'UA-93891039-1', 'auto');
 	ga('send', 'pageview');
 	ga('send','event','image','click');
 	ga('send','event','switchAction','click');
@@ -87,30 +87,18 @@ function ImgclickShirt(e) {
 function ImgclickPants(e) {
 	console.log("the pantclick is triggered from image");
 	// the trigger for google analytics 
-	ga('create', 'UA-92899008-1', 'auto');
+	ga('create', 'UA-93891039-1', 'auto');
 	ga('send', 'pageview');
 	ga('send','event','image','click');
 	ga('send','event','switchAction','click');
 	switchPants();
 }
 
-// Call this fucntion when shirts button get clicked from Alternative 
-function AclickShirt(e) {
-	console.log("the shirt button is clicked");
-	// the trigger for google analytics 
-	ga('create', 'UA-92899008-1', 'auto');
-	ga('send', 'pageview');
-	ga('send','event','button','click');
-	ga('send','event','switchAction','click');
-	ga('send','event','Alternative','click');
-	switchShirt();
-}
-
 // Call this fucntion when shirts button get clicked from the original 
-function OclickShirt(e) {
+function clickShirt(e) {
 	console.log("the shirt button is clicked");
 	// the trigger for google analytics 
-	ga('create', 'UA-92899008-1', 'auto');
+	ga('create', 'UA-93891039-1', 'auto');
 	ga('send', 'pageview');
 	ga('send','event','button','click');
 	ga('send','event','switchAction','click');
@@ -118,23 +106,11 @@ function OclickShirt(e) {
 	switchShirt();
 }
 
-// Call this fucntion when pants button get clicked from Alternative
-function AclickPants(e) {
-	console.log("the pant button is clicked");
-	// the trigger for google analytics 
-	ga('create', 'UA-92899008-1', 'auto');
-	ga('send', 'pageview');
-	ga('send','event','button','click');
-	ga('send','event','switchAction','click');
-	ga('send','event','Alternative','click');
-	switchPants();
-}
-
 // Call this fucntion when pants button get clicked from the original 
-function OclickPants(e) {
+function clickPants(e) {
 	console.log("the pant button is clicked");
 	// the trigger for google analytics 
-	ga('create', 'UA-92899008-1', 'auto');
+	ga('create', 'UA-93891039-1', 'auto');
 	ga('send', 'pageview');
 	ga('send','event','button','click');
 	ga('send','event','switchAction','click');
@@ -146,7 +122,7 @@ function OclickPants(e) {
 function switchShirt() {
 	// Display the fetched result to help debugging 
 	console.log("switchShirt get clicked");
-	ga('create', 'UA-92899008-1', 'auto');
+	ga('create', 'UA-93891039-1', 'auto');
 	ga('send', 'pageview');
 	ga('send','event','shirt','click');
 	
@@ -161,7 +137,7 @@ function switchShirt() {
 function switchPants() {
 	// Display the fetched result to help  debugging 
 	console.log("switchPants get clicked");
-	ga('create', 'UA-92899008-1', 'auto');
+	ga('create', 'UA-93891039-1', 'auto');
 	ga('send', 'pageview');
 	ga('send','event','pants','click');
 	
